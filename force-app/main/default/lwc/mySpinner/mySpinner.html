@@ -1,0 +1,8 @@
+<template>
+    <div class={_wrapClass}>
+        <lightning-spinner alternative-text="Working" size="large"></lightning-spinner>
+        <template lwc:if={richtext}>
+            <lightning-formatted-rich-text class="slds-text-body_regular slds-p-around_medium" value={richtext}></lightning-formatted-rich-text>
+        </template>
+    </div>
+</template>

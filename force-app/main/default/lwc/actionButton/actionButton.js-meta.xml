@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__HomePage</target>        
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="site" type="String" default=""></property>
+            <property name="funcs" type="String" default="" description="specify if needed the functionalities this button is fullfilling"></property>
+            <property name="title" type="String" default=""></property>
+            <property name="icon" type="String" default=""></property>
+            <property name="link" type="String" default=""></property>
+            <property name="width" type="String" default=""></property>
+            <property name="maxWidth" type="String" default=""></property>
+            <property name="minHeight" type="String" default=""></property>
+            <property name="height" type="String" default=""></property>
+            <property name="maxHeight" type="String" default=""></property>
+            <property name="marginTop" type="String" default=""></property>
+            <property name="marginBottom" type="String" default=""></property>
+            <property name="marginLeft" type="String" default=""></property>
+            <property name="marginRight" type="String" default=""></property>
+            <property name="filled" type="Boolean" default="false" ></property>
+            <property name="linkTargetBlank" type="Boolean" default="false" ></property>            
+        </targetConfig>
+    </targetConfigs>    
+</LightningComponentBundle>

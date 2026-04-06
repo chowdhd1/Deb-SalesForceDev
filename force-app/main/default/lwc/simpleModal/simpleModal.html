@@ -1,0 +1,21 @@
+<template>
+    <div class="slds-backdrop slds-backdrop_open backdrop" role="presentation" onclick={handleOutsideClick}></div>
+    <div class={_wrapClass} style={_wrapStyle}>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1">
+            <div onclick={messageClosedHandler}>
+                <div class="horizontal-line" ></div>
+            </div>        
+            <template lwc:if={_showClose}>
+                <button title="Close" onclick={messageClosedHandler} class="slds-is-absolute close-button">
+                    <c-icons icon="close-cross" class="green"></c-icons>
+                    <span class="slds-assistive-text">Close</span>
+                </button>
+            </template>
+            <slot name="top-content"></slot>      
+            <div class={_boxWrapClass}>
+                <slot name="content"></slot>                                          
+            </div>
+            <slot name="bottom-content"></slot> 
+        </section>
+    </div>
+</template>

@@ -1,0 +1,8 @@
+.guestCls{
+	text-align: right;
+
+	lightning-icon {
+		position: relative;
+  		top: -1px;
+	}
+}

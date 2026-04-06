@@ -1,0 +1,14 @@
+<template>
+<template if:false={isGuest}>
+    <div class="syn-component-wrap guestCls">
+        <lightning-icon icon-name="utility:user" alternative-text= {currentUserName} title= {currentUserName} size="xx-small"></lightning-icon>
+        <span class="slds-text-body_regular slds-p-horizontal_x-small">{currentUserName}</span>
+        <a class="slds-text-body_regular" href={logoutLink}>{labels.logout}</a>
+    </div>
+    </template>
+    <template if:true={isGuest}>
+        <!--<div class="guestCls">
+             <a href={logoutLink}>{labels.login}</a>
+        </div>-->
+    </template>
+</template>

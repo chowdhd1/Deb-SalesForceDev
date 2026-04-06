@@ -1,0 +1,228 @@
+:host {
+  display: flex;
+}
+
+.action-button {
+  display: flex;
+}
+.action-button.def {
+  justify-content: center;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 8px;
+  min-height: 40px;
+  height: 40px;
+  border: 1px solid var(--syn-txtGreen);
+}
+.action-button.def c-icons {
+  display: inline-flex;
+  align-items: center;
+}
+.action-button.def.has-pressed {
+  cursor: pointer;
+}
+.action-button.def.both c-icons {
+  padding-right: var(--syn-spacer, 0.5rem);
+}
+.action-button.def.disabled {
+  opacity: 0.7;
+  cursor: auto;
+}
+.action-button.def.filled {
+  background: var(--syn-filledDarkButtonBackground);
+  border-color: var(--syn-filledDarkButtonBackground);
+}
+.action-button.def.filled.disabled {
+  background: #c9c9c9;
+  border-color: #c9c9c9;
+}
+.action-button.def.filled .button-title {
+  color: var(--syn-txtInverse);
+}
+.action-button.def.filled.evident {
+  border: none;
+  box-shadow: inset 0px 0px 10px white;
+}
+.action-button.def:focus {
+  text-decoration: none;
+}
+.action-button.def.evident {
+  border: none;
+  box-shadow: inset 0px 0px 10px var(--syn-inputBorderColor);
+}
+.action-button.dtp {
+  border-radius: 0;
+}
+
+:host(.warning) .action-button.filled {
+  background: #FFF3DD;
+  border-color: #FFF3DD;
+}
+:host(.warning) .action-button .button-title {
+  color: #C17E19;
+}
+
+:host(.no-borders) .action-button {
+  border: none;
+}
+
+:host(.white-green) .action-button.filled {
+  background: var(--syn-elementBg);
+  border-color: var(--syn-elementBg);
+}
+:host(.white-green) .action-button.filled.evident {
+  border: none;
+  box-shadow: inset 0px 0px 10px var(--syn-inputBorderColor);
+}
+:host(.white-green) .action-button .button-title {
+  color: var(--syn-txtGreen);
+}
+
+:host(.white-grey) .action-button.filled {
+  background: var(--syn-elementBg);
+  border-color: var(--syn-inputBorderColor);
+}
+:host(.white-grey) .action-button.filled.evident {
+  border: none;
+  box-shadow: inset 0px 0px 10px var(--syn-inputBorderColor);
+}
+:host(.white-grey) .action-button .button-title {
+  color: #969696;
+}
+
+:host(.expand) {
+  flex: 1;
+}
+:host(.expand) .action-button {
+  flex: 1;
+}
+
+:host(.thin) .action-button {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  min-height: 32px;
+  height: unset;
+  border-radius: 4px;
+}
+:host(.thin) .action-button .button-title {
+  font-size: 0.85rem;
+}
+:host(.thin) .action-button.dtp {
+  border-radius: 0;
+}
+
+:host(.bigger) .action-button .button-title {
+  font-size: 1.25rem;
+}
+
+:host(.smaller-highlighted) .action-button {
+  min-height: auto;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+:host(.smaller-highlighted) .action-button.filled {
+  background: #E7F4E1;
+  border-color: #E7F4E1;
+}
+:host(.smaller-highlighted) .action-button.filled .button-title {
+  color: var(--syn-txtGreen);
+}
+:host(.smaller-highlighted) .action-button.filled.evident {
+  border: none;
+  box-shadow: inset 0px 0px 10px white;
+}
+:host(.smaller-highlighted) .action-button .button-title {
+  font-weight: 600;
+  font-size: var(--dxp-g-font-size-4, 0.87rem);
+}
+
+:host(.vertical-expand) .action-button {
+  height: unset;
+}
+
+:host(.yellowish) .action-button.filled {
+  background: #FFF3DD;
+  border-color: #FFF3DD;
+}
+:host(.yellowish) .action-button.filled .button-title {
+  color: #C17E19;
+}
+:host(.yellowish) .action-button.filled.evident {
+  border: none;
+  box-shadow: inset 0px 0px 10px white;
+}
+:host(.yellowish) .action-button .button-title {
+  color: #C17E19;
+}
+
+:host(.x-smaller) .action-button.filled .button-title {
+  font-weight: 600;
+  font-size: var(--dxp-g-font-size-2, 0.75rem);
+}
+:host(.x-smaller) .action-button .button-title {
+  font-weight: 600;
+  font-size: var(--dxp-g-font-size-2, 0.75rem);
+}
+
+:host(.ellipsis) .action-button .button-title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+:host(.less-padding) .action-button.def {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+:host(.no-x-padding) .action-button.def {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+:host(.white-red) .action-button.filled {
+  background: var(--syn-elementBg);
+  border-color: var(--syn-elementBg);
+}
+:host(.white-red) .action-button.filled.evident {
+  border: none;
+  box-shadow: inset 0px 0px 10px white;
+}
+:host(.white-red) .action-button .button-title {
+  color: #EB4B4B;
+}
+
+:host(.border-green) .action-button {
+  border-color: var(--syn-txtGreen);
+}
+:host(.border-green) .action-button.filled {
+  border-color: var(--syn-txtGreen);
+}
+
+:host(.border-red) .action-button {
+  border-color: #EB4B4B;
+}
+:host(.border-red) .action-button.filled {
+  border-color: #EB4B4B;
+}
+
+:host(.border-grey) .action-button {
+  border-color: var(--syn-inputBorderColor);
+}
+:host(.border-grey) .action-button.filled {
+  border-color: var(--syn-inputBorderColor);
+}
+
+:host(.red) .action-button.filled {
+  background: #EB4B4B;
+  border-color: #EB4B4B;
+}
+
+:host(.white) .action-button.filled {
+  background: #ffffff;
+  border-color: #ffffff;
+}
+:host(.white) .action-button.filled.evident {
+  border: none;
+  box-shadow: inset 0px 0px 10px var(--syn-inputBorderColor);
+}

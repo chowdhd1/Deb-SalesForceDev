@@ -1,0 +1,18 @@
+<template>
+    <c-object-header object-api-name={objectApiName}></c-object-header> 
+    
+    <template if:true={showCopyURLButton}>
+    <div class="">
+    <lightning-button variant="brand" class="slds-m-left_x-small" label="copy" onclick={copyToClipBoard}></lightning-button>
+    </div>
+    </template>
+    
+    <lightning-record-form
+        record-id={recordId}
+        object-api-name={objectApiName}
+        layout-type="Full"
+        mode={actionName}
+        onsuccess={navigateToRecordList}
+        oncancel={navigateToRecordList}>
+    </lightning-record-form>
+</template>

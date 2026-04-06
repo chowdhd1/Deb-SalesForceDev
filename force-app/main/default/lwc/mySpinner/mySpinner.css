@@ -1,0 +1,23 @@
+.my-spinner.def {
+  --dxp-c-spinner-color-foreground: var(--syn-filledDarkButtonBackground);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.my-spinner.def lightning-spinner {
+  --dxp-c-spinner-color-foreground: var(--syn-filledDarkButtonBackground);
+}
+.my-spinner.def lightning-formatted-rich-text {
+  color: var(--syn-txtGreen);
+  position: relative;
+  top: 5rem;
+  background-color: white;
+  border-radius: 1rem;
+  border: 1px solid var(--syn-txtGreen);
+}

@@ -1,0 +1,22 @@
+<template>
+    <template lwc:if={link}>
+        <a class={_wrapClass} style={_wrapStyle} href={link} target={_target}>
+            <template lwc:if={_hasIcon}>
+                <c-icons site={site} funcs={funcs} icon={icon} size={_iconSize} class={iconClass}></c-icons>
+            </template>
+            <template lwc:if={_hasTitle}>
+                <div class="slds-text-body_regular button-title">{title}</div>
+            </template>        
+        </a>
+    </template>
+    <template lwc:else>
+        <div class={_wrapClass} onclick={clickHandler} style={_wrapStyle}>
+            <template lwc:if={_hasIcon}>
+                <c-icons site={site} funcs={funcs} icon={icon} size={_iconSize} class={iconClass}></c-icons>
+            </template>
+            <template lwc:if={_hasTitle}>
+                <div class="slds-text-body_regular button-title">{title}</div>
+            </template>        
+        </div>
+    </template>
+</template>

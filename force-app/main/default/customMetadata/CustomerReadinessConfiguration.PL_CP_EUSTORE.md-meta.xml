@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>PL_CP_EUSTORE</label>
+    <protected>false</protected>
+    <values>
+        <field>AccType__c</field>
+        <value xsi:type="xsd:string">DOMESTIC</value>
+    </values>
+    <values>
+        <field>BUCode__c</field>
+        <value xsi:type="xsd:string">BU01</value>
+    </values>
+    <values>
+        <field>BU__c</field>
+        <value xsi:type="xsd:string">CP</value>
+    </values>
+    <values>
+        <field>GlobalRelBPID__c</field>
+        <value xsi:type="xsd:string">20336987</value>
+    </values>
+    <values>
+        <field>GlobalRelType__c</field>
+        <value xsi:type="xsd:string">ZG</value>
+    </values>
+    <values>
+        <field>IsGoodsDelvred__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>PersonaType__c</field>
+        <value xsi:type="xsd:string">ZZPT003</value>
+    </values>
+    <values>
+        <field>ReceivingFinance__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>ShipToPersonaType__c</field>
+        <value xsi:type="xsd:string">ZZPT009</value>
+    </values>
+    <values>
+        <field>SoslQuery__c</field>
+        <value xsi:type="xsd:string">{
+&quot;findSoslQuery&quot;: &quot;IN ALL FIELDS RETURNING
+Account(Id where VIP__c =true and Account_Country__c =&apos;PL&apos; and isActive__c =true and Deleted_In_Source__c=false order by CreatedDate desc limit 200),
+Contact(AccountId, Id where IsDeleted=false and Active__c=true and Country__c=&apos;PL&apos; and Status__c = &apos;Active&apos; order by CreatedDate desc limit 200),
+Account_Partner_Function__c( Account__c where Archived__c=false and Deleted__c=false and IsDeleted=false AND AcctCountry__c=&apos;Poland&apos; order by CreatedDate desc limit 200),
+slp__Member__c (slp__Account__c where IsDeleted=false AND slp__ProgramCountry__c=&apos;PL&apos; order by CreatedDate desc limit 200)&quot;,
+&quot;includeSecondaryAccounts&quot;: true,
+&quot;queryLoyaltyDetails&quot;: true,
+&quot;maxResultsToDisplay&quot;: 20
+}</value>
+    </values>
+    <values>
+        <field>StoreConfiguration__c</field>
+        <value xsi:type="xsd:string">PLBioAgentStoreConfig</value>
+    </values>
+    <values>
+        <field>TransportationZone__c</field>
+        <value xsi:type="xsd:string">PL05</value>
+    </values>
+</CustomMetadata>

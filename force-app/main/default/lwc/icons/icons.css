@@ -1,0 +1,109 @@
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.syn-icon.def {
+  display: flex;
+  align-items: center;
+}
+.syn-icon.def svg {
+  filter: invert(33%) sepia(5%) saturate(49%) hue-rotate(314deg) brightness(99%) contrast(91%);
+}
+.syn-icon.def.natural svg {
+  filter: unset;
+}
+.syn-icon.size svg {
+  width: 100%;
+  height: 100%;
+}
+.syn-icon.size-1 {
+  width: 1rem;
+}
+.syn-icon.size-15 {
+  width: 1.5rem;
+}
+.syn-icon.size-2 {
+  width: 2rem;
+}
+.syn-icon.size-25 {
+  width: 2.5rem;
+}
+.syn-icon.size-3 {
+  width: 3rem;
+}
+.syn-icon.size-35 {
+  width: 3.5rem;
+}
+.syn-icon.size-4 {
+  width: 4rem;
+}
+.syn-icon.size-45 {
+  width: 4.5rem;
+}
+
+:host(.green) .syn-icon.def:not(.natural) svg {
+  filter: invert(38%) sepia(76%) saturate(862%) hue-rotate(39deg) brightness(90%) contrast(106%);
+}
+
+:host(.white) .syn-icon.def:not(.natural) svg {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(294deg) brightness(101%) contrast(101%);
+}
+
+:host(.light-green) .syn-icon.def:not(.natural) svg {
+  filter: invert(57%) sepia(23%) saturate(1030%) hue-rotate(32deg) brightness(89%) contrast(89%);
+}
+
+:host(.svg-expand) .syn-icon.def svg {
+  width: 100%;
+  height: 100%;
+}
+
+:host(.light-gray) .syn-icon.def:not(.natural) svg {
+  filter: invert(68%) sepia(7%) saturate(380%) hue-rotate(178deg) brightness(83%) contrast(82%);
+}
+
+:host(.black) .syn-icon.def svg {
+  filter: unset;
+}
+
+:host(.lighter-gray) .syn-icon.def:not(.natural) svg {
+  filter: invert(100%) sepia(2%) saturate(646%) hue-rotate(217deg) brightness(115%) contrast(82%);
+}
+
+:host(.red) .syn-icon.def:not(.natural) svg {
+  filter: invert(52%) sepia(95%) saturate(2367%) hue-rotate(325deg) brightness(88%) contrast(111%);
+}
+
+:host(.red-light) .syn-icon.def:not(.natural) svg {
+  filter: invert(49%) sepia(61%) saturate(4410%) hue-rotate(335deg) brightness(99%) contrast(85%);
+}
+
+:host(.red-dark) .syn-icon.def:not(.natural) svg {
+  filter: invert(24%) sepia(95%) saturate(2197%) hue-rotate(341deg) brightness(86%) contrast(86%);
+}
+
+:host(.expand) {
+  flex: 1;
+}
+:host(.expand) .syn-icon.def {
+  flex: 1;
+  align-self: stretch;
+}
+:host(.expand) .syn-icon.def svg {
+  width: 100%;
+  height: 100%;
+}
+
+:host(.dark) .syn-icon.def:not(.natural) svg {
+  filter: invert(11%) sepia(1%) saturate(0%) hue-rotate(95deg) brightness(98%) contrast(98%);
+}
+
+:host(.green) .syn-icon.dtp:not(.natural) svg {
+  filter: invert(27%) sepia(94%) saturate(1146%) hue-rotate(89deg) brightness(93%) contrast(106%);
+}
+
+:host(.blue) .syn-icon.dtp:not(.natural) svg {
+  filter: invert(23%) sepia(99%) saturate(1727%) hue-rotate(203deg) brightness(94%) contrast(112%);
+}

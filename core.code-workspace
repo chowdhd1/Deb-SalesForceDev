@@ -1,0 +1,19 @@
+{
+  "folders": [
+    {
+      "path": "e:/localdev"
+    }
+  ],
+  "settings": {
+    "eslint.workingDirectories": [
+      "e:/localdev"
+    ],
+    "eslint.validate": [
+      "javascript",
+      "typescript"
+    ],
+    "eslint.options": {
+      "overrideConfigFile": "e:\\localdev\\.eslintrc.json"
+    }
+  }
+}

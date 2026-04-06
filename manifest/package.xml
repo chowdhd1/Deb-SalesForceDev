@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>icons</members>
+		<members>objectHeader</members>
+		<members>mySpinner</members>
+		<members>recordDetail</members>
+		<members>simpleModal</members>
+		<members>vegCustomLogin</members>
+		<name>LightningComponentBundle</name>
+	</types>
+	<types>
+		<members>ConnectApiService</members>
+		<name>ApexClass</name>
+	</types>
+	<version>65.0</version>
+</Package>

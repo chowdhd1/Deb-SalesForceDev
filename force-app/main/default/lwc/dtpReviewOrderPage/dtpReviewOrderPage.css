@@ -1,0 +1,28 @@
+.review-order-page {
+  background-color: var(--syn-pageBg);
+  min-height: 300px;
+  overflow-x: hidden;
+}
+.review-order-page c-order-summary {
+  display: block;
+  margin-top: 1rem;
+}
+@media (min-width: 767px) {
+  .review-order-page c-order-summary {
+    margin-top: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .review-order-page > .slds-grid > div:first-child {
+    width: 70%;
+  }
+}
+.review-order-page > .slds-grid > div:last-child {
+  padding-top: 1rem;
+}
+@media (min-width: 1024px) {
+  .review-order-page > .slds-grid > div:last-child {
+    padding-top: 0;
+    width: 30%;
+  }
+}
